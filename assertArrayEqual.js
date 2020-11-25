@@ -1,4 +1,4 @@
-//function takes in two arrays
+//function takes in two arrays and asserts if they are the same.
 const assertArraysEqual = function(array1, array2) {
   //if the lengths are not equal, return a failed assertion
   if (array1.length !== array2.length) {

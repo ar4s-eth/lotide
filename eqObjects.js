@@ -41,21 +41,23 @@ const eqObjects = function(object1, object2) {
 
 // --- TEST CASES ---
 
-//checking if the objects have the same length && values
+// reference objects
 const ab = { a: "1", b: "2"};
 const ba = { b: "2", a: "1"};
+const abc = { a: "1", b: "2", c: "3" };
+
+const cd = { c: "1", d: ["2", 3] };
+const dc = { d: ["2", 3], c: "1" };
+const cd2 = { c: "1", d: ["2", 3, 4] };
+
+//checking if the objects have the same length && values
 console.log(eqObjects(ab, ba));
 
 //checking if the objects have the same length && values
-const abc = { a: "1", b: "2", c: "3" };
-eqObjects(ab, abc);
 console.log(eqObjects(ab, abc));
 
 //checking if the objects have the same length && values && arrays
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
 console.log(eqObjects(cd, dc)); // => true
 
-
-const cd2 = { c: "1", d: ["2", 3, 4] };
+//checking two similar objects, but with an extra number
 console.log(eqObjects(cd, cd2));

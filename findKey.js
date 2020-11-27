@@ -63,7 +63,7 @@ const starMap = {
 //   "Akelarre":  { stars: 3 }
 // }, getNoma)) // => "noma"
 
-// --- TEST CASES --- commit -m "added a function to scan an object and return the first key when the callback is truthy
+// --- TEST CASES --- 
 
 console.log(assertEqual(findKey(starMap, getOneStar), "Blue Hill"));
 console.log(assertEqual(findKey(starMap, getStarThree), "Akaleri"));

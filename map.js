@@ -42,7 +42,9 @@ const map = (array, callback) => {
     // console.log('item AFTER: ', callback(item));
     // console.log('---');
     results.push(callback(item))
+    console.log(item)
   }
+  console.log(results)
   return results;
 }
 
@@ -56,7 +58,7 @@ const getArrayLength = (something) => {
   return something.length
 }
 
-const results1 = map(words, getArrayValues);
+const results1 = map(words, getZeroIndex);
 
 console.log(results1);
 

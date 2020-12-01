@@ -44,7 +44,6 @@ const map = (array, callback) => {
     results.push(callback(item))
     console.log(item)
   }
-  console.log(results)
   return results;
 }
 
@@ -58,16 +57,18 @@ const getArrayLength = (something) => {
   return something.length
 }
 
-const results1 = map(words, getZeroIndex);
+// const results1 = map(words, getZeroIndex);
 
-console.log(results1);
+// console.log(results1);
 
 // --- TEST CASES ---
 
-const array1 = [1, 2];
-const array2 = [1, "two"];
-const array3 = [{ one: 1, two: 2, three: 3}]
+// const array1 = [1, 2];
+// const array2 = [1, "two"];
+// const array3 = [{ one: 1, two: 2, three: 3}]
 
-console.log(assertArraysEqual(map(words, getZeroIndex), ["g", 'c', "t", "m", "t"]));
-console.log(assertArraysEqual(map(array1, getArrayValues), [1, 2]));
-console.log(assertArraysEqual(map(array3, getArrayLength), ["this", "is", "false"]));
+// console.log(assertArraysEqual(map(words, getZeroIndex), ["g", 'c', "t", "m", "t"]));
+// console.log(assertArraysEqual(map(array1, getArrayValues), [1, 2]));
+// console.log(assertArraysEqual(map(array3, getArrayLength), ["this", "is", "false"]));
+
+module.exports = map;

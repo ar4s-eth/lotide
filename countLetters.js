@@ -24,5 +24,7 @@ const countLetters = function(sentence) {
 
 // --- TEST CASES ---
 
-console.log(countLetters("lighthouse in the house"));
-console.log(countLetters("pOlly wAnt A crAckEr?"));
+// console.log(countLetters("lighthouse in the house"));
+// console.log(countLetters("pOlly wAnt A crAckEr?"));
+
+module.exports = countLetters;

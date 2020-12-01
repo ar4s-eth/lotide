@@ -42,22 +42,24 @@ const eqObjects = function(object1, object2) {
 // --- TEST CASES ---
 
 // reference objects
-const ab = { a: "1", b: "2"};
-const ba = { b: "2", a: "1"};
-const abc = { a: "1", b: "2", c: "3" };
+// const ab = { a: "1", b: "2"};
+// const ba = { b: "2", a: "1"};
+// const abc = { a: "1", b: "2", c: "3" };
 
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
-const cd2 = { c: "1", d: ["2", 3, 4] };
+// const cd = { c: "1", d: ["2", 3] };
+// const dc = { d: ["2", 3], c: "1" };
+// const cd2 = { c: "1", d: ["2", 3, 4] };
 
-//checking if the objects have the same length && values
-console.log(eqObjects(ab, ba));
+// //checking if the objects have the same length && values
+// console.log(eqObjects(ab, ba));
 
-//checking if the objects have the same length && values
-console.log(eqObjects(ab, abc));
+// //checking if the objects have the same length && values
+// console.log(eqObjects(ab, abc));
 
-//checking if the objects have the same length && values && arrays
-console.log(eqObjects(cd, dc)); // => true
+// //checking if the objects have the same length && values && arrays
+// console.log(eqObjects(cd, dc)); // => true
 
-//checking two similar objects, but with an extra number
-console.log(eqObjects(cd, cd2));
+// //checking two similar objects, but with an extra number
+// console.log(eqObjects(cd, cd2));
+
+module.exports = eqObjects;

@@ -52,15 +52,15 @@ const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
 
 // provided variables using the high-level function
-const results1 = takeUntil(data1, x => x > 0); // <- this code supplied in the exercise returns an empty array
+// const results1 = takeUntil(data1, x => x > 0); // <- this code supplied in the exercise returns an empty array
 //console.log(results1);
 
 
-const results2 = takeUntil(data2, (something) => {
-  return something === ','
-});
-console.log(results2);
-console.log('---');
+// const results2 = takeUntil(data2, (something) => {
+//   return something === ','
+// });
+// console.log(results2);
+// console.log('---');
 
 // --- TEST CASES ---
 
@@ -83,11 +83,13 @@ const lessThanFive = (x) => {
 
 //return until an element is less than 0
 const result1 = takeUntil(data1, lessThanZero);
-console.log(result1)
+// console.log(result1)
 
 const test1 = takeUntil(data2, beforeTo);
-console.log(test1)
+// console.log(test1)
 
-console.log(assertArraysEqual(takeUntil(data1, lessThanZero), [1, 2, 5, 7, 2]));
-console.log(assertArraysEqual(takeUntil(data2, beforeTo), ["I\'ve", "been"]));
-console.log(assertArraysEqual(takeUntil(data1, lessThanFive), ["this", "is", "false"]));
+// console.log(assertArraysEqual(takeUntil(data1, lessThanZero), [1, 2, 5, 7, 2]));
+// console.log(assertArraysEqual(takeUntil(data2, beforeTo), ["I\'ve", "been"]));
+// console.log(assertArraysEqual(takeUntil(data1, lessThanFive), ["this", "is", "false"]));
+
+module.exports = takeUntil;

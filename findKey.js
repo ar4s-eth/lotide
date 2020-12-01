@@ -65,8 +65,10 @@ const starMap = {
 
 // --- TEST CASES --- 
 
-console.log(assertEqual(findKey(starMap, getOneStar), "Blue Hill"));
-console.log(assertEqual(findKey(starMap, getStarThree), "Akaleri"));
-console.log(assertEqual(findKey(starMap, getNoma), "noma"));
-console.log(assertEqual(findKey(starMap, getNoma), "this is false"));
-console.log(assertEqual(findKey(starMap, getFiveStar)));
+// console.log(assertEqual(findKey(starMap, getOneStar), "Blue Hill"));
+// console.log(assertEqual(findKey(starMap, getStarThree), "Akaleri"));
+// console.log(assertEqual(findKey(starMap, getNoma), "noma"));
+// console.log(assertEqual(findKey(starMap, getNoma), "this is false"));
+// console.log(assertEqual(findKey(starMap, getFiveStar)));
+
+module.exports = findKey;

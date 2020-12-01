@@ -4,7 +4,7 @@ const eqArrays = require('./eqArrays')
 //function takes in two arrays and asserts if they are the same.
 const assertArraysEqual = function(array1, array2) {
   //if the lengths are not equal, return a failed assertion
-  console.log(array2)
+  // console.log(array2)
   if (array1.length !== array2.length) {
     return `🔥 Assertion Failed: Arrays have unequal length`;
   } 
@@ -18,4 +18,5 @@ const assertArraysEqual = function(array1, array2) {
   return `🟢 Assertion Passed: Arrays are the same`;
 };
 // console.log(assertArraysEqual([1,2,3], [1,3]))
+
 module.exports = assertArraysEqual;

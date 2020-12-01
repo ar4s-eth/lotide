@@ -32,13 +32,14 @@ const assertObjectsEqual = function(object1, object2) {
 
 // --- TEST CASES ---
 // reference objects
-obj1 = { b: 1, a: 2 }
-obj2 = { a: 2, b: 1 }
-obj3 = { a: 1, b: 2, c: 3 }
-obj4 = { a: 1, b: 2, c: "3" }
+// obj1 = { b: 1, a: 2 }
+// obj2 = { a: 2, b: 1 }
+// obj3 = { a: 1, b: 2, c: 3 }
+// obj4 = { a: 1, b: 2, c: "3" }
 
-assertObjectsEqual(obj1, obj1) // same objects -> pass
-assertObjectsEqual(obj1, obj2) // different objects with the same keys & values *in different order -> pass
-assertObjectsEqual(obj1, obj3) // different objects -> fail
-assertObjectsEqual(obj3, obj4) // same objects -> pass
+// assertObjectsEqual(obj1, obj1) // same objects -> pass
+// assertObjectsEqual(obj1, obj2) // different objects with the same keys & values *in different order -> pass
+// assertObjectsEqual(obj1, obj3) // different objects -> fail
+// assertObjectsEqual(obj3, obj4) // same objects -> pass
 
+module.exports = assertObjectsEqual;

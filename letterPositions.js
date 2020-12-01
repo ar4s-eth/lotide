@@ -15,4 +15,6 @@ const letterPositions = function(sentence) {
 
 // --- TEST CASES ---
 
-console.log(letterPositions("lighthouse blah blah blah"));
+// console.log(letterPositions("lighthouse blah blah blah"));
+
+module.exports = letterPositions;

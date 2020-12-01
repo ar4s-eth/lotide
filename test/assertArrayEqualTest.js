@@ -1,5 +1,5 @@
-const assertArrayEqual = require('../assertArrayEqual.js')
+const assertArraysEqual = require('../assertArraysEqual.js')
 
 // --- TEST CASES ---
 
-console.log(assertArrayEqual([1,"2", "ten", 99],[1,"2", "ten", 99]));
+console.log(assertArraysEqual([1,"2", "ten", 99],[1,"2", "ten", 99]));

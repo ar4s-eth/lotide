@@ -10,6 +10,7 @@ const assertEqual = function(actual, expected) {
 const findKeyByValue = function(object, value) {
   //loop through object to get genres 
   for (let genre in object) { 
+    console.log(object[genre])
     if (object[genre] === value) {
       return genre
     }

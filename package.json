@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@ar4sdoteth/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "a mini-clone of lodash, from a lighthouse labs dev-in-training",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/ar4sdoteth/lotide.git"
   },
-  "author": "",
+  "author": "Ash of the Barr",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ar4sdoteth/lotide/issues"

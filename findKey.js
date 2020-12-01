@@ -1,11 +1,3 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    return `🟢 Assertion Passed: ${actual} === ${expected}`;
-  } else {
-    return `🔥 Assertion Failed: ${actual} !== ${expected}`;
-  }
-};
-
 //function should return the "noma" key.
 // refactored original callback x => x.stars === 2 to something easier to understand
 const getNoma = (key) => {
